@@ -1,0 +1,93 @@
+{
+  "gameTitle": "🏰 Moja Przygoda",
+  "scenes": {
+    "start": {
+      "text": "Witaj w grze! Stoisz na rozstaju dróg. Gdzie pójdziesz?",
+      "choices": [
+        { "text": "W lewo", "next": "left" },
+        { "text": "W prawo", "next": "right" }
+      ]
+    },
+    "left": {
+      "text": "Poszedłeś w lewo i spotkałeś smoka! Chce z tobą walczyć.",
+      "choices": [
+        { "text": "⚔️ Walcz", "next": "fight" },
+        { "text": "🏃 Uciekaj", "next": "start" }
+      ]
+    },
+    "right": {
+      "text": "Poszedłeś w prawo i znalazłeś skrzynię ze skarbami!",
+      "choices": [
+        { "text": "💰 Otwórz", "next": "treasure" },
+        { "text": "↩️ Wróć", "next": "start" }
+      ]
+    },
+    "fight": {
+      "text": "Rzuć kośćmi aby walczyć ze smokiem!",
+      "choices": [
+        { "text": "🎲 Rzuć kośćmi", "next": "fight" },
+        { "text": "🏃 Uciekaj", "next": "start" }
+      ]
+    },
+    "after_fight": {
+      "text": "Kontynuujesz swoją podróż... Co robisz dalej?",
+      "choices": [
+        { "text": "↩️ Wróć do rozstaju", "next": "start" },
+        { "text": "➡️ Idź naprzód", "next": "forest" }
+      ]
+    },
+    "forest": {
+      "text": "Jesteś w ciemnym lesie. Słyszysz dziwne dźwięki...",
+      "choices": [
+        { "text": "🔍 Zbadaj", "next": "explore" },
+        { "text": "↩️ Wróć", "next": "after_fight" }
+      ]
+    },
+    "explore": {
+      "text": "Znalazłeś starożytną świątynię!",
+      "choices": [
+        { "text": "🚪 Wejdź do świątyni", "next": "temple" },
+        { "text": "↩️ Wróć", "next": "forest" }
+      ]
+    },
+    "temple": {
+      "text": "W świątyni znalazłeś magiczny artefakt! Wygrałeś grę! 🏆",
+      "choices": [
+        { "text": "🔄 Zacznij od nowa", "next": "start" }
+      ]
+    },
+    "treasure": {
+      "text": "Otworzyłeś skrzynię i znalazłeś złoto! Gratulacje! 💰",
+      "choices": [
+        { "text": "🔄 Zacznij od nowa", "next": "start" }
+      ]
+    },
+    "win": {
+      "text": "Pokonałeś smoka i zabrałeś jego skarby! 💪",
+      "choices": [
+        { "text": "➡️ Kontynuuj podróż", "next": "after_fight" }
+      ]
+    },
+    "lose": {
+      "text": "Przegrałeś ze smokiem... ale udało ci się uciec.",
+      "choices": [
+        { "text": "↩️ Wróć do rozstaju", "next": "start" }
+      ]
+    },
+    "draw": {
+      "text": "Remis! Rzuć kośćmi ponownie!",
+      "choices": [
+        { "text": "🎲 Rzuć ponownie", "next": "fight" },
+        { "text": "🏃 Uciekaj", "next": "start" }
+      ]
+    }
+  },
+  "alerts": {
+    "victory": "Zwycięstwo!",
+    "defeat": "Porażka!",
+    "draw": "Remis!",
+    "victoryMessage": "Pokonałeś wroga!",
+    "defeatMessage": "Przegrałeś...",
+    "drawMessage": "Remis! Rzućcie ponownie."
+  }
+}
